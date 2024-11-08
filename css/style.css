@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Steppe-Book';
+    src: url('../fonts/Steppe-Book.ttf');
+}
+
+@font-face {
+    font-family: 'Steppe-ExtraBold';
+    src: url('../fonts/Steppe-ExtraBold.ttf');
+}
+
+body{
+    color: white;
+    background-color: #f4b643;
+}
+
+.flex{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: #704a03;
+    transition: color ease 0.5s;
+}
+
+a:hover{
+    color: #ffffff;
+    transition: color ease 0.5s
+}
+
+/* MENU */
+
+.menu {
+    font-family: 'Steppe-Book', sans-serif;
+}
+
+.menu__lists ul{
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__lists li{
+    transition: color ease 0.5s;
+}
+
+.menu__lists li:nth-child(n+2){
+    margin-left: 50px;
+}
+
+
+/* MAIN */
+
+.main {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.main__title {
+    font-family: 'Steppe-ExtraBold',sans-serif;
+    transition: color ease 0.5s;
+    font-size: 50px;
+    z-index: 1;
+}
+
+.main__description {
+    font-family: 'Steppe-Book', sans-serif;
+}
+
+.main__crumbs img{
+    height: 800px;
+    position: absolute;
+    left: 140px;
+    bottom: 100px;
+}
+
+.main__cookie img{
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* INFO */
+
+
+.info {
+    padding-top: 200px;
+    position: relative;
+}
+
+.info__title{
+    font-family: 'Steppe-Book', sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info__title span{
+    font-size: 20px;
+}
+
+.info__img{
+    position: absolute;
+    z-index: -1;
+    left: 500px;
+    top: -100px;
+   
+}
+
+.info__containers {
+    margin-top: 200px;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.info__contain {
+    padding: 30px;
+    border: 1px solid white;
+}
+
+.contain_img img{
+    height: 400px;
+    padding-left: 40px;
+}
+
+.contain__name{
+    font-family: 'Steppe-ExtraBold',sans-serif;
+    transition: color ease 0.5s;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contain__quote {
+    font-family: 'Steppe-Book', sans-serif;
+    padding: 10px 0px;
+}
+
+.contain__role {
+    font-family: 'Steppe-ExtraBold',sans-serif;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.contain__info {
+    font-family: 'Steppe-Book', sans-serif;
+}
+
+.contain__info span{
+    font-family: 'Steppe-ExtraBold',sans-serif;
+    
+}
+
+
+/* Projects */
+
+.projects {
+    padding-top: 200px;
+    position: relative;
+}
+
+.projects__cookie img{
+    position: absolute;
+    left: 380px;
+}
+
+.projects__crumbs img{
+    position: absolute;
+    right: 250px;
+    top: 500px;
+    filter: blur(1px);
+    z-index: -3;
+}
+
+.projects__title{
+    font-family: 'Steppe-ExtraBold',sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 150px;
+}
+
+.projects__title::before{
+    content: url('../img/projects/png-klev-club-prdh-p-kroshki-pechenya-png-19.png');
+}
+
+.projects__contianer {
+    font-family: 'Steppe-Book', sans-serif;
+    justify-content: space-around;
+}
+
+.projects__project {
+    border: 1px solid white;
+}
+
+.project__img img{
+    height: 200px;
+}
+
+.project__title {
+    font-family: 'Steppe-ExtraBold',sans-serif;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.project__link {
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+/* CONTACTS */
+
+
+.contacts {
+    padding-top: 200px;
+}
+.contacts__title {
+    font-family: 'Steppe-Book', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+.contacts__all {
+    padding-top: 50px;
+    justify-content: space-evenly;
+}
+
+.contacts__info{
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.contacts__info p{
+    padding-top: 10px;
+}
+
+.contacts__inga {
+}
+.contacts__egor {
+}
+
+
+
+@media (max-width: 1280px){
+    .main__crumbs img{
+        left: 0px;
+    }
+    
+    .main__cookie img{
+        height: 600px;
+        top: 200px;
+    }
+
+    .info__img{
+        left: 150px;
+        top: -20px;
+    }
+
+    .projects__contianer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects__project{
+        margin-top: 30px;
+    }
+
+    .projects__cookie img{
+        position: absolute;
+        left: 70px;
+    }
+
+    .projects__crumbs img{
+        top: 1000px;
+    }
+
+    .project__img img{
+        height: 180px;
+    }
+}
+
+@media (max-width: 1024px){
+    .main__crumbs img{
+        height: 600px;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .main__cookie img{
+        height: 450px;
+        top: 300px;
+    }
+
+    .info__containers{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__contain{
+        margin-bottom: 50px;
+    }
+
+    .info__img{
+        left: 0px;
+        top: -50px;
+    }
+
+    .projects__cookie img{
+        height: 350px;
+        left: 0px;
+    }
+
+    .projects__crumbs img{
+        left: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .main__title {
+        font-size: 30px;
+    }
+
+    .main__cookie img{
+        display: none;
+    }
+
+    .main__crumbs img{
+        height: 500px;
+        top: 100px;
+    }
+
+    .main__description{
+        font-size: 15px;
+    }
+
+    .info__img img{
+        position: absolute;
+        height: 450px;
+        left: 50px;
+    }
+
+    .projects__crumbs img{
+        height: 600px;
+        left: 150px;
+    }
+
+    .projects__cookie img{
+        top: 0;
+    }
+
+    .projects__crumbs img{
+        left: 0px;
+    }
+}
+
+@media (max-width: 480px){
+    .main__title{
+        font-size: 35px;
+    }
+
+    .main__crumbs img{
+        height: 300px;
+        top: 250px;
+    }
+
+    .info__img img{
+        height: 350px;
+        left: 0px;
+    }
+
+    .info__contain{
+        padding: 0px;
+    }
+
+    .info__containers{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contain_img img{
+        height: 350px;
+    }
+
+    .projects__cookie img{
+        height: 300px;
+        left: -20px;
+    }
+
+    .projects__crumbs img{
+        position: absolute;
+        top: 1200px;
+        height: 320px;
+    }
+
+    .contacts__all{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contacts__title{
+        font-size: 20px;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 320px){
+    .main__title {
+        font-size: 20px;
+    }
+
+    .main__crumbs img{
+        display: none;
+    }
+
+    .info__img img{
+        display: none;
+    }
+
+    .projects__cookie img{
+        display: none;
+    }
+
+    .projects__crumbs img{
+        display: none;
+    }
+
+    .project__img img{
+        display: none;
+    }
+}
